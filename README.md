@@ -51,13 +51,13 @@ rclone ncdu S3-UNIL-RW:
 ```
 
 **3.2 下载数据**
-使用 `copy` 命令将特定的数据集从 S3 存储桶下载到当前工作目录。`-P` 参数用于实时显示下载进度：
+使用 `copy` 命令将特定的数据集从 S3 存储桶下载到当前工作目录。`-P` 参数用于实时显示下载进度(两个文件夹名字要更换成自己的)：
 ```bash
 rclone copy -P S3-UNIL-RW:DW_Glacios_EPFL_Ablasser_Lingyun_grid3_D2_20260407 ./DW_Glacios_EPFL_Ablasser_Lingyun_grid3_D2_20260407
 ```
 
 **3.3 删除云端数据（清理）**
-数据成功下载并确认无误后，使用 `purge` 命令删除云端的数据以释放空间（**注意：此操作不可逆**）：
+数据成功下载并确认无误后，使用 `purge` 命令删除云端的数据以释放空间（我们下载完后需要删除以节省存储费，**注意：此操作不可逆**）：
 ```bash
 rclone purge S3-UNIL-RW:DW_Glacios_EPFL_Ablasser_Lingyun_grid3_D2_20260407 -P
 ```
