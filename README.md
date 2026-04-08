@@ -9,7 +9,7 @@
 **1.1 登录 SCITAS 集群**
 首先，使用 SSH 登录到 izar3 节点（更换自己的名字）：
 ```bash
-ssh pxu@hpc.izar3.epfl.ch
+ssh pxu@izar3.hpc.epfl.ch
 ```
 
 **1.2 切换工作目录**
