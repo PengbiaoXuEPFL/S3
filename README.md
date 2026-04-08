@@ -51,7 +51,7 @@ rclone ncdu S3-UNIL-RW:
 ```
 
 **3.2 下载数据**
-使用 `copy` 命令将特定的数据集从 S3 存储桶下载到当前工作目录。`-P` 参数用于实时显示下载进度(两个文件夹名字要更换成自己的)：
+使用 `copy` 命令将特定的数据集从 S3 存储桶下载到当前工作目录。`-P` 参数用于实时显示下载进度(两个文件夹名字要更换成自己收集的数据文件夹)：
 ```bash
 rclone copy -P S3-UNIL-RW:DW_Glacios_EPFL_Ablasser_Lingyun_grid3_D2_20260407 ./DW_Glacios_EPFL_Ablasser_Lingyun_grid3_D2_20260407
 ```
